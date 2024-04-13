@@ -12,7 +12,47 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <header>
+        <nav class="main-nav">
+            <div class="container container--nav center-between">
+                <a href="#">
+                    <picture>
+                        <source media="min-width(500px)" srcset="./images/logo.png">
+                    </picture>
+                    <img src="./images/mobile-logo.png" alt="KidsPlay" />
+                </a>
     
+                <ul class="components-links hidden-nav">
+                    <li><a href="discover">Discover</a></li>    
+                    <li><a href="arrivals">Arrivals</a></li>
+                    <li><a href="shop">Shop</a></li>
+                    <li><a href="popular">Popular</a></li>
+                    <li><a href="discover">Discover</a></li>
+                </ul>
+    
+                <div class="nav__options flex-center">
+                    <a href="#sign" class="flex-center">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Sign in</span>
+                    </a>
+                    <a href="#post" class="btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Post listing</span>
+                    </a>
+                </div>
+    
+                <div class="nav-btns flex-center">
+                    <button class="nav-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <a href="#post" class="btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Post listing</span>
+                    </a>
+                </div>
+            </div>
+        </nav>    
+    </header>
     <script src="./script.js"></script>
 </body>
 </html>

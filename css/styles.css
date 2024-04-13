@@ -1,3 +1,124 @@
+/* header */
 
+.main-nav{
+    position: relative;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.components-links{
+    flex: 1;
+    position: relative;
+    gap: 1.5rem;
+    display: flex;
+    justify-content:center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width:1023px){
+    .components-links{
+        flex-direction: column;
+        position: absolute;
+        top:70px;
+        left: 0;
+        right: 0;
+        background: #c0cddd;
+        text-align: center;
+        padding: 2rem ;
+        font-weight: 500;
+        transition: transform .3s ease-in-out;
+        transform-origin: top center;
+    }
+    .hidden-nav{
+        transform: scale3d(1,0,1);
+    }
+}
+
+.components-links li{
+    position: relative;
+    transition:color .3s ease-in-out;
+}
+
+.components-links li:after{
+    content: '';
+    position: absolute;
+    top:-0.5rem;
+    left:-0.5rem;
+    width:calc(100% + 1rem);
+    height: calc(100% + 1rem);
+    background-color: var(--tomato);
+    transition: transform .2s linear;
+    transform: scale3d(1,0,1);
+    transform-origin: center bottom;
+    z-index: -1;
+}
+
+
+.components-links li:hover{
+    color: #fff ;
+}
+.components-links li:hover:after{
+    transform: scale3d(1,1,1);
+}
+
+.nav__options{
+    gap: 1.5rem;
+    color:var(--tomato);
+    font-size: 1rem;
+    display: none;
+}
+.nav__options li{
+    transition: color .3s linear;
+    font-weight: 700;
+}
+
+nav a{
+    gap: .5rem;
+    transition: opacity .3s ease-in-out;
+}
+
+nav a[href='#sign']{
+    color:var(--tomato);
+    font-weight: 500;
+}
+nav a[href='#sign'] i{
+    font-weight: 500;
+}
+
+
+nav a[href='#post']{
+    color: #fff;
+    background-color:var(--tomato);
+}
+
+nav a:hover{
+    opacity: .7;
+}
+
+.nav-btns{
+ gap: 1rem;
+}
+
+.nav-btn{
+    font-size: 1.5rem;
+    opacity: .8;
+}
+
+@media (min-width:1024px){
+    .components-links,
+    .nav__options{
+        display: flex;
+    }
+    .nav-btns{
+        display:none;
+    }
+}
+
+@media (min-width:1200px){
+    .components-links{
+        gap:56px;
+    }
+}
 
 

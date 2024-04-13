@@ -83,6 +83,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2rem;
 }
 
 /* --------------------------- classes ----------------------*/
@@ -93,6 +94,19 @@ button{
 .text-tomato{
    color: var(--tomato);
 }
+
+.center-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ---------------------------- media ----------------------*/
 
 @media (min-width:560px){

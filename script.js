@@ -1,3 +1,5 @@
+/* observe */
+
 const transformers = document.querySelectorAll('.tarns-observer');
 
 const observer = new IntersectionObserver(
@@ -24,4 +26,13 @@ const observer = new IntersectionObserver(
 
 transformers.forEach(transformer => {
     observer.observe(transformer)
+})
+
+/* nav */
+
+const navBtn = document.querySelector('.nav-btn'),
+      componentList =  document.querySelector('.components-links'); 
+
+navBtn.addEventListener('click' , ()=>{
+    componentList.classList.toggle('hidden-nav');
 })
