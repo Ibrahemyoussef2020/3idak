@@ -1,0 +1,167 @@
+:root{
+    --black-500:#1C1C1C;
+    --tomato:#E93740;
+    --gray-500:#F4F4F4;
+    --gray-600:#E8E8E8;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--black-500);
+}
+
+/* reset elements */
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+    background-color: unset;
+    border: none;
+    outline: none;
+}
+
+
+/* components */
+
+.container{
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    position: relative;
+    font-weight: 600;
+    font-size:1.25rem;
+    width: fit-content;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    bottom:-1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: var(--tomato);
+}
+
+.title::after{
+    content: '';
+    position: absolute;
+    bottom:-1rem;
+    left:60%;
+    width:5px;
+    height:5px;
+    background-color:#fff;
+}
+
+/* btn */
+
+.btn{
+    padding: .5rem 1rem;
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------- classes ----------------------*/
+
+.bg-tomato{
+    background-color: var(--tomato);
+}
+.text-tomato{
+   color: var(--tomato);
+}
+/* ---------------------------- media ----------------------*/
+
+@media (min-width:560px){
+    .container{
+       width:500px;
+    }
+}
+@media (min-width:630px){
+    .container{
+       width:600px;
+    }
+}
+@media (min-width:767px){
+    .container{
+       width: 750px;
+    }
+    .title{
+        font-weight: 700;
+        font-size:2.25rem;
+    }
+    .title:after{
+        left: 55%;
+    }
+}
+@media (min-width:900px){
+    .container{
+       width: 900px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+       width: 1100px;
+    }
+}
+@media (min-width:1350px){
+    .container{
+       width: 1250px;
+    }
+}
+
+/* ------------------------observer classes -----------------------*/
+
+.tarns-observer{
+    transition: transform .3s ease-in-out;
+}
+.scale{
+    transform-origin:bottom center;
+    transform: scale3d(1,0,1);
+}
+.scale-1{
+    transform: scale3d(1,1,1);
+}
+
+.traslate-left{
+    transform: translateX(-100%);
+}
+.traslate-right{
+    transform: translateX(100%);
+}
+.traslate-back{
+    transform: translateX(0);
+}
+
+.delay-quick{
+    transition-delay: 1s;
+}
+.delay-normal{
+    transition-delay: 1.5s;
+}
+.delay-slow{
+    transition-delay: 2s;
+}
