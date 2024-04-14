@@ -33,6 +33,7 @@ button{
     background-color: unset;
     border: none;
     outline: none;
+    color: inherit;
 }
 
 
@@ -90,6 +91,7 @@ button{
 
 .bg-tomato{
     background-color: var(--tomato);
+    color:#fff;
 }
 .text-tomato{
    color: var(--tomato);
@@ -105,6 +107,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.center{
+    text-align: center;
 }
 
 /* ---------------------------- media ----------------------*/
