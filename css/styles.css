@@ -556,6 +556,22 @@ a.btn.current{
     transition: color .5s ease-in-out;
 }
 
+/* footer */
+
+.features__footer{
+    margin-top:24px;
+}
+
+.features__footer button{
+    width: 100px;
+    transition: width .3s linear , background-color .3s linear;
+}
+
+.features__footer:hover button{
+    width:90%;
+    background-color: #2D7BC0;
+}
+
 @media (min-width:640px){
 
     .features__header .btns{
@@ -606,6 +622,9 @@ a.btn.current{
     }
     .profile__job{
         font-size: .88rem;
+    }
+    .features__footer{
+        margin-top:48px;
     }
 }
 
