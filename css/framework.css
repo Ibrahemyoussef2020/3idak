@@ -52,7 +52,7 @@ button{
     width: fit-content;
     margin-left:auto;
     margin-right: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom:44px;
 }
 
 .title::before{
@@ -113,6 +113,10 @@ button{
     text-align: center;
 }
 
+.main-mr-btn{
+    margin-bottom: 56px;
+}
+
 /* ---------------------------- media ----------------------*/
 
 @media (min-width:560px){
@@ -132,6 +136,7 @@ button{
     .title{
         font-weight: 700;
         font-size:2.25rem;
+        margin-bottom:56px;
     }
     .title:after{
         left: 55%;
@@ -140,6 +145,10 @@ button{
 @media (min-width:900px){
     .container{
        width: 900px;
+    }
+
+    .main-mr-btn{
+        margin-bottom: 56px;
     }
 }
 @media (min-width:1200px){
@@ -150,6 +159,16 @@ button{
 @media (min-width:1350px){
     .container{
        width: 1250px;
+    }
+}
+@media (min-width:1600px){
+    .container{
+       width: 1500px;
+    }
+}
+@media (min-width:1800px){
+    .container{
+       width: 1700px;
     }
 }
 
