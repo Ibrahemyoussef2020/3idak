@@ -13,6 +13,7 @@
 
 body{
   font-family: "Rubik", sans-serif;
+  font-weight: 500;
   font-optical-sizing: auto;
   color: var(--black-500);
 }
