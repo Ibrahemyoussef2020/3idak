@@ -296,3 +296,77 @@ nav a:hover{
     }
 }
 
+/* ------------------------------------ Browse ------------------ */
+.cartegories{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.cartegory{
+    gap: .5rem;
+    padding: 4px 10px 2px 5px;
+    border: 1px solid var(--gray-600);
+    border-radius:100px;
+}
+
+.cartegory.target{
+    background: #fff;
+    box-shadow: -1px 1px 15px 2px #eee, 
+                1px -1px 15px 2px #eee;
+}
+
+@media (max-width:630px){
+    .cartegories{
+        justify-content: flex-start;
+    }
+    .cartegory{
+        flex: 1;
+        min-width: 100%;
+    }
+}
+
+.cartegory div{
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    transition: transform .3s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.cartegory:hover > div{
+    transform:rotateZ(360deg)scale3d(1.1,1.1,1.1);
+}
+
+
+.cartegory h3{
+    flex: 1;
+    white-space: nowrap;
+}
+
+[data-color='pink'] > div{
+    color:#E93740;
+    background-color:#FDEBEC;
+}
+[data-color='green'] > div{
+    color:#77B747;
+    background-color:#e5fbd9;
+}
+[data-color='mouve'] > div{
+    color:#A54A95;
+    background-color:#F6EDF4;
+}
+[data-color='blue'] > div{
+    color:#2D7BC0;
+    background-color:#EAF2F9;
+}
+[data-color='orange'] > div{
+    color:#F68235;
+    background-color:#FEF3EB;
+}
+
+.cartegoriy h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1C1C1C;
+}
