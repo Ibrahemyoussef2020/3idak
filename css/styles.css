@@ -763,3 +763,74 @@ a.btn.current{
         max-width: 350px;
     }
 }
+
+/* --------------------------- location ----------------------------*/
+
+
+.container--location{
+    display: flex;
+    gap:5px
+}
+
+.location__right , .location__left{
+    display: none;
+    min-height: 250px;
+    min-width: 25%;
+}
+
+.location__center{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.location__center article{
+    flex: 1;
+    min-width:90%;
+    aspect-ratio: 1 / .7;
+}
+
+.location article{
+    overflow: hidden;
+}
+
+.location  img{
+    max-width: 100%;
+    height: 100%;
+    transition: transform .3s ease-in-out;
+}
+
+.location article:hover img{
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+@media (min-width:500px){
+    .location__right , .location__left{
+        flex: 1;
+        display: block;
+    }
+    .location__center article{
+        flex: 1;
+        min-width:40%;
+        aspect-ratio: 1 / .7;
+    }
+    .location__center .mob-img{
+        display: none;
+    }
+}
+
+@media (min-width:1200px){
+    .container--location , .location__center{
+        gap: 15px;
+    }
+}
+
+@media (min-width:1900px){
+    .container--location , .location__center{
+        gap: 35px;
+    }
+    .location__right , .location__left{
+        min-width:380px;
+        min-height: 540px;
+    }
+}
