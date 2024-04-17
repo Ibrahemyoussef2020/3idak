@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(
             }
             else if(element.classList.contains('traslate')){
                 element.classList.toggle('traslate-back', entry.isIntersecting)
-            }     
+            }      
             if (entry.isIntersecting) observer.unobserve(element)  
         }
             

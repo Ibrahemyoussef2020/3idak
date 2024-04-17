@@ -176,10 +176,10 @@ button{
 /* ------------------------observer classes -----------------------*/
 
 .tarns-observer{
-    transition: transform .3s ease-in-out;
+    transition: transform .7s ease-in-out;
 }
 .scale{
-    transform-origin:bottom center;
+    transform-origin:center;
     transform: scale3d(1,0,1);
 }
 .scale-1{
@@ -194,14 +194,4 @@ button{
 }
 .traslate-back{
     transform: translateX(0);
-}
-
-.delay-quick{
-    transition-delay: 1s;
-}
-.delay-normal{
-    transition-delay: 1.5s;
-}
-.delay-slow{
-    transition-delay: 2s;
 }

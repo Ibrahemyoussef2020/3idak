@@ -366,7 +366,12 @@ nav a:hover{
 }
 /* ----------------------- features ----------------*/
 
+.features{
+    overflow: hidden;
+}
+
 /* - features header -*/
+
 
 .features__header .btns{
     position: relative;
@@ -405,7 +410,9 @@ a.btn.current{
 .feature{
     width:100%;
     --feature-padding:5px;
-    transition: background-color .5s ease-in-out;
+    transition: background-color .5s ease-in-out,
+                transform .3s ease-in-out
+    ;
     cursor: pointer;
 }
 
