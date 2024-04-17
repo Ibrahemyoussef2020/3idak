@@ -982,3 +982,155 @@ a.btn.current{
         line-height: 1.6;
     }
 }
+
+/* ---------------------------- footer--------------------------*/
+
+footer{
+    font-weight: 400;
+}
+
+.footer__content{
+    padding: 32px 0;
+    background-color: #F4F4F4;
+}
+
+.content__intro{
+    max-width: 380px;
+    margin-bottom: 2rem;
+}
+
+.content__intro p{
+    line-height: 1.8;
+    margin: 18px 0 ;
+    font-weight: 400;
+}
+
+.socials{
+    display: flex;
+    gap: .5rem;
+}
+
+.socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #ffff;
+    background-color: var(--tomato);
+    font-weight: 900;
+    transition: background-color .2s linear;
+}
+
+.socials a:hover{
+    background-color:blue;
+}
+
+
+/* lists */
+
+.content__lists{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:1.2rem;
+}
+
+footer ul{
+    flex:1;
+    min-width: 170px;
+}
+
+footer li{
+    color:var(--light-black);
+    margin-bottom: 1rem;
+    width: 100%;
+    min-width: 150px;
+    font-size: 14px;
+    transition: color .3s ease-in-out;
+}
+
+footer .heading{
+    font-weight: 600;
+    color: var(--tomato);
+}
+
+footer li:hover{
+    color: #7754f6;
+}
+
+footer .heading{
+    margin-bottom: 1rem;
+}
+
+footer form{
+    flex: 2;
+    min-width:220px;
+}
+
+footer form p{
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+footer form input{
+    width: 100%;
+    height:48px;
+    border-radius:48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--black-500);
+    outline: none;
+    margin-bottom: 16px;
+}
+
+footer form .btn{
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    background:var(--tomato);
+}
+
+/* bottom */
+
+.footer__copyright{
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:.94rem .5rem;
+    line-height: 1.8;
+}
+
+@media (min-width:600px){
+    footer ul{
+        min-width: 150px;
+    }
+}
+@media (min-width:1200px){
+    footer form{
+        max-width:275px;
+    }
+}
+
+@media (min-width:1400px){
+    .container--footer__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 34px;
+    }
+    .content__intro p{
+        margin: 18px 0 36px;
+    }
+}
+@media (min-width:1600px){
+    .footer__content{
+        padding: 70px 0;
+    }
+    .container--footer__content{
+        gap: 134px;
+    }
+}
